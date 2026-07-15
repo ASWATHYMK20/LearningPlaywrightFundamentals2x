@@ -4,16 +4,27 @@ A Playwright test automation project demonstrating fundamental concepts and best
 
 ## Overview
 
-This project uses [Playwright](https://playwright.dev/) to write reliable end-to-end tests for web applications. It serves as a learning resource for Playwright fundamentals including browser automation, assertions, and test configuration.
+This project uses [Playwright](https://playwright.dev/) to write reliable end-to-end tests for web applications. It serves as a learning resource for Playwright fundamentals including:
+
+- **Browser, Context, Page (BCP) hierarchy** - Understanding the core Playwright architecture
+- **Multi-user testing** - Using multiple browser contexts for isolated user sessions
+- **Multi-tab testing** - Managing multiple pages within a single context
+- **Playwright test runner** - Using the built-in test framework with assertions
+- **Test annotations** - Adding descriptions and metadata to tests
 
 ## Project Structure
 
 ```
 ├── tests/
-│   └── example.spec.ts    # Example test specs
-├── playwright.config.ts   # Playwright configuration
-├── package.json           # Project dependencies
-└── .gitignore             # Git ignore rules
+│   └── 02_first_tests/
+│       ├── 231_First_running_Verify.spec.ts  # First running test with annotations
+│       ├── 232_BCP.spec.ts                   # Browser, Context, Page hierarchy
+│       ├── 233_BCP_MultipleContext.spec.ts   # Multiple contexts (multi-user testing)
+│       ├── 234_BCP_Multiple_Page.spec.ts     # Multiple pages/tabs in a context
+│       └── 235_TEST_I_PW.spec.ts             # Playwright test runner with assertions
+├── playwright.config.ts                      # Playwright configuration
+├── package.json                              # Project dependencies
+└── .gitignore                                # Git ignore rules
 ```
 
 ## Tech Stack
