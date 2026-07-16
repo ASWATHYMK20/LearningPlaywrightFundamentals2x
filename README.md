@@ -21,7 +21,9 @@ This project uses [Playwright](https://playwright.dev/) to write reliable end-to
 │       ├── 232_BCP.spec.ts                   # Browser, Context, Page hierarchy
 │       ├── 233_BCP_MultipleContext.spec.ts   # Multiple contexts (multi-user testing)
 │       ├── 234_BCP_Multiple_Page.spec.ts     # Multiple pages/tabs in a context
-│       └── 235_TEST_I_PW.spec.ts             # Playwright test runner with assertions
+│       ├── 235_TEST_I_PW.spec.ts             # Playwright test runner with assertions
+│       ├── 236_BCP_TEST_PW.spec.ts           # Two users interacting (multi-user testing)
+│       └── 237_BCP_Test_Options.spec.ts      # Browser context options (viewport, locale, geolocation, mobile emulation)
 ├── playwright.config.ts                      # Playwright configuration
 ├── package.json                              # Project dependencies
 └── .gitignore                                # Git ignore rules
